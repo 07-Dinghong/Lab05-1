@@ -600,6 +600,8 @@ GameObject:
   - component: {fileID: 299742204}
   - component: {fileID: 299742203}
   - component: {fileID: 299742202}
+  - component: {fileID: 299742206}
+  - component: {fileID: 299742207}
   m_Layer: 0
   m_Name: Coin (4)
   m_TagString: Coin
@@ -638,7 +640,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -680,6 +682,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &299742206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299742201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &299742207
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299742201}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!65 &327837077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -965,6 +998,8 @@ GameObject:
   - component: {fileID: 429442797}
   - component: {fileID: 429442796}
   - component: {fileID: 429442795}
+  - component: {fileID: 429442794}
+  - component: {fileID: 429442799}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -972,6 +1007,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &429442794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429442793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
 --- !u!136 &429442795
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1003,7 +1053,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1045,6 +1095,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!54 &429442799
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429442793}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &469370549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1123,8 @@ GameObject:
   - component: {fileID: 469370552}
   - component: {fileID: 469370551}
   - component: {fileID: 469370550}
+  - component: {fileID: 469370554}
+  - component: {fileID: 469370555}
   m_Layer: 0
   m_Name: Coin (1)
   m_TagString: Coin
@@ -1095,7 +1163,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1137,6 +1205,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &469370554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469370549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &469370555
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469370549}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &486021990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1248,8 @@ GameObject:
   - component: {fileID: 486021993}
   - component: {fileID: 486021992}
   - component: {fileID: 486021991}
+  - component: {fileID: 486021995}
+  - component: {fileID: 486021996}
   m_Layer: 0
   m_Name: Coin (10)
   m_TagString: Coin
@@ -1187,7 +1288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1229,6 +1330,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &486021995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486021990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &486021996
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486021990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!114 &504244545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,13 +1617,28 @@ GameObject:
   - component: {fileID: 504244545}
   - component: {fileID: 519159745}
   - component: {fileID: 517915969}
+  - component: {fileID: 513957026}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &513957026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513957025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1e3bcae25444046b2bd80a5603adcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scoretxt: {fileID: 1275200695}
+  Timertxt: {fileID: 1719443304}
 --- !u!1 &513957027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,6 +2524,8 @@ GameObject:
   - component: {fileID: 1195894685}
   - component: {fileID: 1195894684}
   - component: {fileID: 1195894683}
+  - component: {fileID: 1195894687}
+  - component: {fileID: 1195894688}
   m_Layer: 0
   m_Name: Coin (7)
   m_TagString: Coin
@@ -2415,7 +2564,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2457,6 +2606,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1195894687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195894682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1195894688
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195894682}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!23 &1241811376
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2560,6 +2740,8 @@ GameObject:
   - component: {fileID: 1261595695}
   - component: {fileID: 1261595694}
   - component: {fileID: 1261595693}
+  - component: {fileID: 1261595697}
+  - component: {fileID: 1261595698}
   m_Layer: 0
   m_Name: Coin (9)
   m_TagString: Coin
@@ -2598,7 +2780,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2640,6 +2822,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1261595697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261595692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1261595698
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261595692}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &1275200693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,6 +3126,8 @@ GameObject:
   - component: {fileID: 1353491543}
   - component: {fileID: 1353491542}
   - component: {fileID: 1353491541}
+  - component: {fileID: 1353491545}
+  - component: {fileID: 1353491546}
   m_Layer: 0
   m_Name: Coin (2)
   m_TagString: Coin
@@ -2951,7 +3166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2993,6 +3208,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1353491545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353491540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1353491546
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353491540}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!114 &1361889831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3470,6 +3716,8 @@ GameObject:
   - component: {fileID: 1621377050}
   - component: {fileID: 1621377049}
   - component: {fileID: 1621377048}
+  - component: {fileID: 1621377052}
+  - component: {fileID: 1621377053}
   m_Layer: 0
   m_Name: Coin (8)
   m_TagString: Coin
@@ -3508,7 +3756,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3550,6 +3798,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1621377052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621377047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1621377053
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621377047}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &1628287803
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,6 +3841,8 @@ GameObject:
   - component: {fileID: 1628287806}
   - component: {fileID: 1628287805}
   - component: {fileID: 1628287804}
+  - component: {fileID: 1628287808}
+  - component: {fileID: 1628287809}
   m_Layer: 0
   m_Name: Coin (5)
   m_TagString: Coin
@@ -3600,7 +3881,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3642,6 +3923,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1628287808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628287803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1628287809
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628287803}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &1667417515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3654,6 +3966,8 @@ GameObject:
   - component: {fileID: 1667417518}
   - component: {fileID: 1667417517}
   - component: {fileID: 1667417516}
+  - component: {fileID: 1667417520}
+  - component: {fileID: 1667417521}
   m_Layer: 0
   m_Name: Coin (6)
   m_TagString: Coin
@@ -3692,7 +4006,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3734,6 +4048,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1667417520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667417515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1667417521
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667417515}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &1719443302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3982,6 +4327,8 @@ GameObject:
   - component: {fileID: 1942023693}
   - component: {fileID: 1942023692}
   - component: {fileID: 1942023691}
+  - component: {fileID: 1942023695}
+  - component: {fileID: 1942023696}
   m_Layer: 0
   m_Name: Coin (3)
   m_TagString: Coin
@@ -4020,7 +4367,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 02c774d25d44840feb66feb905ba75c2, type: 2}
+  - {fileID: 2100000, guid: e79959e501bd0364f95185942c0c58ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4062,6 +4409,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1942023695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942023690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ab87663587d4d4d9192947f5a335ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spin: 45
+  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
+    type: 3}
+--- !u!54 &1942023696
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942023690}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
 --- !u!1 &2014010564
 GameObject:
   m_ObjectHideFlags: 0

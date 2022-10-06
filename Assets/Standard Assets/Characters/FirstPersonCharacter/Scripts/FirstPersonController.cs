@@ -103,11 +103,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if(TImer <= 0)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(2);
             }
             else if (transform.position.y < -8)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(2);
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
@@ -286,20 +286,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if(other.gameObject.tag == "Coin")
-            {
-                Score += 10;
-                Destroy(other.gameObject);
-                Scoretxt.text = "Score: " + Score;
-                goal--;
-
-                if(goal <= 0)
-                {
-                    SceneManager.LoadScene(1);
-                }
-            }
-        }
+       
     }
 }

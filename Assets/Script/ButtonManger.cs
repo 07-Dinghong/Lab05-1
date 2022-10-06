@@ -4,14 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class ButtonManger : MonoBehaviour
 {
- 
-    
-    
-    
-    
-    public void Restart()
+
+
+    private void Update()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+
+
+        public void Restart()
     {
         SceneManager.LoadScene(0);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
    
 }
