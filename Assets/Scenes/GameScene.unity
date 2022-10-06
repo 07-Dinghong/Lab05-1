@@ -695,8 +695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &299742207
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1020,8 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!136 &429442795
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1218,8 +1216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &469370555
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1343,8 +1340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &486021996
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1637,6 +1633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1e3bcae25444046b2bd80a5603adcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeleft: 21
   Scoretxt: {fileID: 1275200695}
   Timertxt: {fileID: 1719443304}
 --- !u!1 &513957027
@@ -2619,8 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1195894688
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2835,8 +2831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1261595698
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3221,8 +3216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1353491546
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3367,7 +3361,7 @@ GameObject:
   - component: {fileID: 1154888796}
   m_Layer: 4
   m_Name: WaterProDaytime
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3811,8 +3805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1621377053
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3936,8 +3929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1628287809
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4061,8 +4053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1667417521
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4422,8 +4413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spin: 45
-  collecteffect: {fileID: 7856816587484531750, guid: 6ae3d0e6571868c4ba86f8f43300be54,
-    type: 3}
+  collecteffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
 --- !u!54 &1942023696
 Rigidbody:
   m_ObjectHideFlags: 0

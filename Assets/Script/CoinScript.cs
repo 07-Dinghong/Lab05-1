@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
     public float spin;
-    public ParticleSystem collecteffect;
+    public GameObject collecteffect;
     // Start is called before the first frame update
     void Start()
     {

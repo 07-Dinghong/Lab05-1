@@ -8,7 +8,8 @@ public class PlayerCondition : MonoBehaviour
 
     //UI Stuff
     private int Score;
-    private float TImer = 21;
+    public float timeleft;
+    private float timeremaining;
     public Text Scoretxt;
     public Text Timertxt;
     private int goal;
@@ -29,20 +30,21 @@ public class PlayerCondition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TImer -= Time.deltaTime;
-        Timertxt.text = "Timer: " + TImer.ToString("F0");
+        timeleft -= Time.deltaTime;
+        timeremaining = Mathf.FloorToInt(timeleft % 60);
+        Timertxt.text = "Timer: " + timeremaining.ToString("F0");
 
-        if (TImer <= 0)
-        {
-            SceneManager.LoadScene(2);
-        }
-        else if (transform.position.y < -8)
+        if (timeleft <= 0)
         {
             SceneManager.LoadScene(2);
         }
     }
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "Fire")
+        {
+            SceneManager.LoadScene(2);
+        }
         if (other.gameObject.tag == "Coin")
         {
             Score += 10;
