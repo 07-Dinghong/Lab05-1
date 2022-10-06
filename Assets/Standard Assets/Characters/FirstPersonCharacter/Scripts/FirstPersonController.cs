@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -28,6 +30,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+        //UI Stuff
+        private int Score;
+        private float TImer = 21;
+        public Text Scoretxt;
+        public Text Timertxt;
+        private int goal;
+        //Camera and stuff
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -55,6 +64,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            Scoretxt.text = "Score: " + Score;
+
+            //Check how many Coin on scene
+            GameObject[] coins;
+            coins = GameObject.FindGameObjectsWithTag("Coin");
+            if (coins.Length >= 0)
+            {
+                goal = coins.Length;
+            }
         }
 
 
@@ -78,6 +96,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
             {
                 m_MoveDir.y = 0f;
+            }
+
+            TImer -= Time.deltaTime;
+            Timertxt.text = "Timer: " + TImer.ToString("F0");
+
+            if(TImer <= 0)
+            {
+                SceneManager.LoadScene(0);
+            }
+            else if (transform.position.y < -8)
+            {
+                SceneManager.LoadScene(0);
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
@@ -254,6 +284,22 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.tag == "Coin")
+            {
+                Score += 10;
+                Destroy(other.gameObject);
+                Scoretxt.text = "Score: " + Score;
+                goal--;
+
+                if(goal <= 0)
+                {
+                    SceneManager.LoadScene(1);
+                }
+            }
         }
     }
 }
